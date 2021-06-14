@@ -6,8 +6,15 @@ class HomeBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         color: Colors.white,
-        child: Center(
-          child: HomeTitle(),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            HomeTitle(),
+            Image.asset(
+              "assets/images/factory.png",
+              fit: BoxFit.contain,
+            ),
+          ],
         ));
   }
 }
